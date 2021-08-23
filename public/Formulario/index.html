@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="form-1">
+        <form id="form" method="POST" action="/add-user">
+            <h4>Registro de suscripción</h4>
+            <input class="controls" type="text" name="name" placeholder="Ingrese su nombre" id="name__form">
+            <input class="controls" type="text" name="surname" placeholder="Ingrese su apellido" id="lastname__form">
+            <input class="controls" type="email" name="email" id="email__form" placeholder="Ingrese su correo">
+            <label>
+                <input type="checkbox" name="terminos" id="terms"> <a href="#">Acepta términos y condiciones</a>
+            </label>
+            <input class="button" type="submit" value="Enviar" disabled id="button">
+        </form>
+        <p id="error__name" class="form__error error__name">El nombre no puede contener ningun simbolo o número</p>
+        <p id="error__lastname" class="form__error error__lastname">El apellido no puede contener ningun simbolo o número</p>
+        <p id="error__mail" class="form__error error__mail">El correo indicado no corresponde a una dirección legitima</p>
+        <p id="error__terms" class="form__error error__terms">
+            Acepte términos y condiciones
+        </p>
+        <p id="sending" class="sendingoff">Enviado correctamente</p>
+    </div>
+
+<script src="scripts.js"></script>
+</body>
+</html>
